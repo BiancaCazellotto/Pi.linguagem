@@ -1,0 +1,17 @@
+/* Estilo para telas maiores */
+body {
+    font-size: 16px;
+  }
+  
+  /* Estilo para telas menores (celulares, por exemplo) */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Reduzindo a fonte para telas pequenas */
+    }
+    
+    /* Exemplo de ajuste de layout */
+    .card {
+      width: 100%; /* Cards ocupam toda a largura da tela em dispositivos móveis */
+    }
+  }
+  
