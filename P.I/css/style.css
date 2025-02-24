@@ -7,11 +7,26 @@ body {
   @media (max-width: 768px) {
     body {
       font-size: 14px; /* Reduzindo a fonte para telas pequenas */
+      
     }
     
     /* Exemplo de ajuste de layout */
     .card {
       width: 100%; /* Cards ocupam toda a largura da tela em dispositivos móveis */
     }
+  }
+
+  .custom.pink {
+    background-color: #e32587 !important;
+  color: white; /* Ajuste a cor do texto para contraste */
+  }
+  
+  .bg-custom {
+    background-color: #e3328d !important; /* Substitua pelo código da cor desejada */
+    color: white;
+  }
+
+  .btn-custom {
+    background-color: #e3328d
   }
   
