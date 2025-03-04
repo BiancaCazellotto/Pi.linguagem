@@ -1,7 +1,7 @@
 * {margin: 0; padding: 0;}
 
 body {
-    background: #ffbff3; padding: 5%; font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background: #ffacd7; padding: 5%; font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #div {
@@ -14,7 +14,7 @@ body {
 }
 
 header{
-    background-color:  #e32587;
+    background-color:  #ffacd7;
     padding: 2%;
     border-bottom: 1px solid #69898d;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
@@ -32,7 +32,7 @@ main {
 }
 
 footer {
-    background: #89bada;
+    background:#e32587 ;
     text-align: center;
     padding: 2%;
     border-top:1px solid #999;
@@ -70,7 +70,7 @@ table {
 
 table thead tr
 {
-    background: #ff50e8;
+    background:#e32587 ;
     text-transform: uppercase;
     text-align: left;
     padding: 2%;
@@ -99,3 +99,11 @@ th {
     padding: 1.7%;
     font-size: large;
 }
+
+button {
+    text-align: center;
+    text-decoration:  #ff128c;
+    background-color:  #ff86c4;
+    color: white;
+}
+

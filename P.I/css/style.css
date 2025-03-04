@@ -16,6 +16,7 @@ body {
     }
   }
 
+
   .custom.pink {
     background-color: #e32587 !important;
   color: white; /* Ajuste a cor do texto para contraste */
@@ -29,4 +30,9 @@ body {
   .btn-custom {
     background-color: #e3328d
   }
+  
+  .btn-custom2 {
+    background-color: #e379b0
+  }
+  
   
