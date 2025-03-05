@@ -43,6 +43,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="suporte.html">Suporte</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="listagem_vendas.html">Listagem de Vendas</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -73,9 +76,14 @@
                 <input type="text" class="form-control" id="endereco" placeholder="Rua">
             </div>
             <div class="mb-3">
-                <input type="text" class="form-control" placeholder="Bairro">
+                <label for="bairro" class="form-label">Bairro</label>
+                <input type="text" class="form-control" id="bairro" placeholder="Digite seu bairro">
             </div>
             <div class="mb-3">
+                <label for="cep" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
+            </div>
+            
                 <input type="text" class="form-control" placeholder="Cidade">
             </div>
             <div class="mb-3">
@@ -87,10 +95,6 @@
                     <!-- Adicionar mais estados -->
                 </select>
             </div>
-            <div class="mb-3">
-                <input type="text" class="form-control" placeholder="CEP">
-            </div>
-            <div class="mb-3">
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
             </div>
