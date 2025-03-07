@@ -83,11 +83,16 @@
                 <label for="cep" class="form-label">CEP</label>
                 <input type="text" class="form-control" id="cep" placeholder="Digite seu CEP">
             </div>
-                <div class="mb-3">
+            
+            <div class="mb-3">
                 <label for="cidade" class="form-label">Cidade</label>
                 <input type="text" class="form-control" id="cidade" placeholder="Digite sua cidade">
             </div>
+            
+            
+
             <div class="mb-3">
+                <label for="estado" class="form-label">Estado</label>
                 <select class="form-select" id="estado">
                     <option selected>Escolha o estado</option>
                     <option value="SP">São Paulo</option>
@@ -96,25 +101,31 @@
                     <!-- Adicionar mais estados -->
                 </select>
             </div>
+
+            <div>
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
             </div>
+
             <div class="mb-3">
                 <label for="senha" class="form-label">Senha</label>
                 <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
             </div>
+            
             <div class="mb-3">
                 <label for="confirmacaoSenha" class="form-label">Confirmação de Senha</label>
                 <input type="password" class="form-control" id="confirmacaoSenha" placeholder="Confirme sua senha">
             </div>
+
             <div class="mb-3">
                 <select class="form-select">
-                    <option selected disabled>Tipo de Usuário</option>
+                    <option selected disabled>Tipo de Usuário</option>                
                     <option value="admin">Administrador</option>
                     <option value="funcionario">Funcionário</option>
                     <option value="cliente">Cliente</option>
                 </select>
             </div>
+
             <button type="submit" class="btn btn-custom w-100">Cadastrar</button>
         </form>
     </div>

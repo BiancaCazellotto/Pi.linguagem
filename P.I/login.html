@@ -63,8 +63,25 @@
             </div>
             <div class="mb-3">
                 <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                <div class="input-group">
+                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                    <button class="btn btn-outline-secondary" type="button" id="toggleSenha">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
+                <script>
+                    document.getElementById("toggleSenha").addEventListener("click", function() {
+                        var senhaInput = document.getElementById("senha");
+                        if (senhaInput.type === "password") {
+                            senhaInput.type = "text";
+                        } else {
+                            senhaInput.type = "password";
+                        }
+                    });
+                </script>
+                
             </div>
+            
             <button type="submit" class="btn btn-custom w-100">Entrar</button>
         </form>
         <div class="mt-3">

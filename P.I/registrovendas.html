@@ -53,16 +53,18 @@
     </nav>
 </header>
 
+<form action="/salvar-venda" method="POST">
     <div class="container mt-5">
         <h2>Registro de Venda</h2>
         <form>
             <div class="mb-3">
                 <label for="cliente" class="form-label">Cliente</label>
-                <input type="text" class="form-control" id="cliente" placeholder="Nome do cliente">
+                <input type="text" class="form-control" id="cliente" placeholder="Nome do cliente" required>
             </div>
             <div class="mb-3">
                 <label for="cpfCliente" class="form-label">CPF do Cliente</label>
-                <input type="text" class="form-control" id="cpfCliente" placeholder="Digite o CPF do cliente">
+                <input type="text" class="form-control" id="cpfCliente" placeholder="Digite o CPF do cliente" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF válido (XXX.XXX.XXX-XX)">
+
             </div>
             <div class="mb-3">
                 <label for="produto" class="form-label">Produto</label>
@@ -74,7 +76,7 @@
             </div>
             <div class="mb-3">
                 <label for="quantidade" class="form-label">Quantidade</label>
-                <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
+                <input type="number" class="form-control" id="quantidade" placeholder="Quantidade" min="1" required>
             </div>
             <div class="mb-3">
                 <label for="dataVenda" class="form-label">Data da Venda</label>
@@ -91,7 +93,7 @@
             <div class="d-flex justify-content-between">
                 <a href="registrovendas.html" class="btn btn-custom2">Voltar</a>
                 <button type="reset" class="btn btn-custom">Limpar</button>
-                <button type="submit" class="btn btn-custom2">Salvar</button>
+                <button type="submit" class="btn btn-custom2 ">Salvar</button>
             </div>
         </form>
     </div>

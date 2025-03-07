@@ -63,12 +63,26 @@
                 <label for="email" class="form-label">E-mail</label>
                 <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
             </div>
+            <script>
+                document.querySelector("form").addEventListener("submit", function(event) {
+                    var email = document.getElementById("email").value;
+                    var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Regex para validar e-mail
+            
+                    if (!regex.test(email)) {
+                        alert("Por favor, insira um e-mail válido.");
+                        event.preventDefault(); // Impede o envio do formulário se o e-mail for inválido
+                    }
+                });
+            </script>
+            
             <button type="submit" class="btn btn-custom w-100">Enviar Link de Recuperação</button>
         </form>
 
-        <div class="mt-3">
-            <a href="login.html">Voltar para Login</a>
+
+        <div class="mt-3 text-center">
+            <a href="login.html" class="btn btn-secondary">Voltar para Login</a>
         </div>
+        
     </div>
 
     <!-- Rodapé -->
